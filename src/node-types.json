@@ -402,6 +402,30 @@
       "required": true,
       "types": [
         {
+          "type": "IDENT",
+          "named": true
+        },
+        {
+          "type": "SCRIPT_0_LIT",
+          "named": true
+        },
+        {
+          "type": "TOKEN_KW_BREAK",
+          "named": true
+        },
+        {
+          "type": "TOKEN_KW_CONTINUE",
+          "named": true
+        },
+        {
+          "type": "TOKEN_KW_END",
+          "named": true
+        },
+        {
+          "type": "TOKEN_KW_RETURN",
+          "named": true
+        },
+        {
           "type": "TOKEN_P_BCLOSE",
           "named": true
         },
@@ -427,6 +451,30 @@
         },
         {
           "type": "movement_values",
+          "named": true
+        },
+        {
+          "type": "poryswitch",
+          "named": true
+        },
+        {
+          "type": "script_application",
+          "named": true
+        },
+        {
+          "type": "script_do_while",
+          "named": true
+        },
+        {
+          "type": "script_if",
+          "named": true
+        },
+        {
+          "type": "script_switch",
+          "named": true
+        },
+        {
+          "type": "script_while",
           "named": true
         },
         {
@@ -597,6 +645,10 @@
         },
         {
           "type": "TOKEN_P_BOPEN",
+          "named": true
+        },
+        {
+          "type": "poryswitch",
           "named": true
         },
         {
@@ -846,6 +898,10 @@
             "named": true
           },
           {
+            "type": "poryswitch",
+            "named": true
+          },
+          {
             "type": "script_application",
             "named": true
           },
@@ -903,6 +959,10 @@
           },
           {
             "type": "TOKEN_KW_RETURN",
+            "named": true
+          },
+          {
+            "type": "poryswitch",
             "named": true
           },
           {

@@ -173,6 +173,15 @@
           "name": "script_application"
         },
         {
+          "type": "ALIAS",
+          "content": {
+            "type": "SYMBOL",
+            "name": "poryswitch_script"
+          },
+          "named": true,
+          "value": "poryswitch"
+        },
+        {
           "type": "SYMBOL",
           "name": "SCRIPT_0_LIT"
         },
@@ -478,6 +487,102 @@
               }
             }
           ]
+        }
+      ]
+    },
+    "poryswitch_case_script": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "FIELD",
+          "name": "case",
+          "content": {
+            "type": "SYMBOL",
+            "name": "IDENT"
+          }
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "SYMBOL",
+                  "name": "TOKEN_P_BOPEN"
+                },
+                {
+                  "type": "REPEAT",
+                  "content": {
+                    "type": "SYMBOL",
+                    "name": "_script_statements"
+                  }
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "TOKEN_P_BCLOSE"
+                }
+              ]
+            },
+            {
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "SYMBOL",
+                  "name": "TOKEN_P_COLON"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "_script_statements"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "poryswitch_script": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "TOKEN_KW_PORYSWITCH"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "TOKEN_P_POPEN"
+        },
+        {
+          "type": "FIELD",
+          "name": "switch",
+          "content": {
+            "type": "SYMBOL",
+            "name": "IDENT"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "TOKEN_P_PCLOSE"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "TOKEN_P_BOPEN"
+        },
+        {
+          "type": "REPEAT1",
+          "content": {
+            "type": "ALIAS",
+            "content": {
+              "type": "SYMBOL",
+              "name": "poryswitch_case_script"
+            },
+            "named": true,
+            "value": "poryswitch_case"
+          }
+        },
+        {
+          "type": "SYMBOL",
+          "name": "TOKEN_P_BCLOSE"
         }
       ]
     },

@@ -155,6 +155,7 @@ script MyScript {
     poryswitch(LANGUAGE) {
         SPANISH {
             msgbox("Hola. Hablo Español")
+            msgbox("Hola. Hablo Español")
         }
         ENGLISH: msgbox("Hello. I speak English.")
         _: msgbox("Hallo. Ich spreche Deutsch.")

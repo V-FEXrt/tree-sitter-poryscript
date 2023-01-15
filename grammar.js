@@ -77,6 +77,7 @@ module.exports = grammar({
       $.script_do_while,
       $.script_switch,
       $.script_application,
+      alias($.poryswitch_script, $.poryswitch),
       $.SCRIPT_0_LIT,
       $.TOKEN_KW_BREAK,
       $.TOKEN_KW_CONTINUE,
@@ -147,6 +148,9 @@ module.exports = grammar({
       ),
     ),
 
+    poryswitch_case_script: $ => mk_poryswitch_case($, repeat($._script_statements), $._script_statements),
+    poryswitch_script: $ => mk_poryswitch($, alias($.poryswitch_case_script, $.poryswitch_case)),
+   
     script_expression: $ => choice(
       $.script_application,
       // TODO: Binops / Boolean exprs
