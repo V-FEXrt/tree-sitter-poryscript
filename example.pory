@@ -1,0 +1,167 @@
+mart MyMartItems {
+	ITEM_LAVA_COOKIE
+	ITEM_MOOMOO_MILK
+	ITEM_RARE_CANDY
+	ITEM_LEMONADE
+	ITEM_BERRY_JUICE
+}
+
+mart(local) MyMartItems {
+	ITEM_LAVA_COOKIE
+	ITEM_MOOMOO_MILK
+	ITEM_RARE_CANDY
+	ITEM_LEMONADE
+	ITEM_BERRY_JUICE
+}
+
+# A different comment
+# another comment
+mart(global) MyMartItems {
+	ITEM_LAVA_COOKIE
+	ITEM_MOOMOO_MILK
+	ITEM_RARE_CANDY
+	ITEM_LEMONADE
+	ITEM_BERRY_JUICE
+}
+
+// test
+mart MyMartItems {
+  poryswitch(GAME_VERSION) {
+    AB {
+      ITEM_LAVA_COOKIE
+      ITEM_MOOMOO_MILK
+    }
+    CD {
+      ITEM_RARE_CANDY
+      ITEM_LEMONADE
+      ITEM_BERRY_JUICE
+    }
+    _: ITEM_LEMONADE
+  }
+}
+
+text MyText {
+  "TODO"
+  "TODO"
+}
+
+text MyText {
+    "Hello, there.\p"
+    "You can refer to me in scripts or C code."
+}
+
+text MyText {
+    format("Hello, are you the real-live legendary {PLAYER} that everyone talks about?\p"
+           "Amazing!\pSo glad to meet you!")
+}
+
+text MyText {
+    format("{ONE}, are you the {TWO} {PLAYER} that everyone talks about?\p {THREE}"
+           "Amazing!\pSo glad to meet you!")
+}
+
+text MyText {
+    poryswitch(LANGUAGE) {
+        SPANISH {
+          "Hola. Hablo Español"
+        }
+        GERMAN:  "Hallo. Ich spreche Deutsch."
+        ENGLISH: "Hello. I speak English."
+        _: "TEST"
+    }
+}
+
+raw `
+MyLocalText:
+    .string "I'm directly included.$"
+`
+
+movement MyMovement {
+    walk_left
+    walk_right * 3
+}
+
+movement MyMovement {
+    poryswitch(LANGUAGE) {
+      SPANISH {
+        walk_left
+        walk_up * 5
+        face_down
+      }
+      _: walk_left
+    }
+}
+
+const PROF_BIRCH_ID = 3
+const ASSISTANT_ID = PROF_BIRCH_ID + 0x1F
+const FLAG_GREETED_BIRCH = FLAG_TEMP_2
+
+script MyScript {
+    lock
+    faceplayer
+    release
+    end
+    msgbox("You received the best prize!")
+    msgbox("{PLAYER} received the best prize!")
+    msgbox(
+      "You received the best prize!"
+      "You received the best prize!"
+      "You received the best prize!"
+    )
+    flag(IDENT)
+    var(5)
+    value(0x103)
+    defeated(IDENT)
+}
+
+script MyScript {
+    lock
+    faceplayer
+    if (flag(FLAG_RECEIVED_TOP_PRIZE)) {
+        msgbox("You received the best prize!")
+    } elif (flag(FLAG_RECEIVED_WORST_PRIZE)) {
+        if (var(VAR_BADGES)) {
+            msgbox("You received the best prize!")
+        } else {
+            msgbox("You received the best prize!")
+        }
+    } else {
+        msgbox("Hmm, you didn't receive anything.")
+    }
+    release
+    while {
+      break
+    }
+    while (flag(FLAG_RECEIVED_TOP_PRIZE)) {
+        msgbox("You received the best prize!")
+	return
+    }
+    do {
+        msgbox("Can you help me solve the puzzle?")
+	continue
+    } while (var(VAR_RESULT))
+
+    switch (var(VAR_NUM_THINGS)) {
+        case 0:
+            msgbox("You have 0 things.")
+            msgbox("asdf")
+        case 1:
+        case 2:
+            msgbox("You have 1 or 2 things.")
+        default:
+            msgbox("You have at least 3 things.")
+    }
+
+    poryswitch(LANGUAGE) {
+        SPANISH {
+            msgbox("Hola. Hablo Español")
+        }
+        ENGLISH: msgbox("Hello. I speak English.")
+        _: msgbox("Hallo. Ich spreche Deutsch.")
+    }
+
+    end
+}
+
+
+

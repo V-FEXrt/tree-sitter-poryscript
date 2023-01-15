@@ -1,0 +1,1352 @@
+[
+  {
+    "type": "COMMENT",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "HASH_COMMENT",
+          "named": true
+        },
+        {
+          "type": "SLASH_COMMENT",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "FORMAT_STRING",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "STRING_INTERPOLATED",
+          "named": true
+        },
+        {
+          "type": "STRING_LIT",
+          "named": true
+        },
+        {
+          "type": "TOKEN_BI_FORMAT",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_PCLOSE",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_POPEN",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "MOVEMENT_LIT",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "NUM_LIT",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "BIN_LIT",
+          "named": true
+        },
+        {
+          "type": "HEX_LIT",
+          "named": true
+        },
+        {
+          "type": "INT_LIT",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "SCRIPT_0_LIT",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "SCRIPT_FN_LIT",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "STRING",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "FORMAT_STRING",
+          "named": true
+        },
+        {
+          "type": "STRING_INTERPOLATED",
+          "named": true
+        },
+        {
+          "type": "STRING_LIT",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "STRING_INTERPOLATED",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "IDENT",
+          "named": true
+        },
+        {
+          "type": "STRING_INTER_END",
+          "named": true
+        },
+        {
+          "type": "STRING_INTER_MID",
+          "named": true
+        },
+        {
+          "type": "STRING_INTER_START",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "const",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "IDENT",
+          "named": true
+        },
+        {
+          "type": "NUM_LIT",
+          "named": true
+        },
+        {
+          "type": "TOKEN_KW_CONST",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_EQUALS",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_PLUS",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "mart",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "IDENT",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "TOKEN_KW_MART",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_BCLOSE",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_BOPEN",
+          "named": true
+        },
+        {
+          "type": "mart_values",
+          "named": true
+        },
+        {
+          "type": "poryswitch",
+          "named": true
+        },
+        {
+          "type": "scope_modifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "mart_value",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "IDENT",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "mart_values",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "IDENT",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "movement",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "IDENT",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "TOKEN_KW_MOVEMENT",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_BCLOSE",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_BOPEN",
+          "named": true
+        },
+        {
+          "type": "movement_values",
+          "named": true
+        },
+        {
+          "type": "poryswitch",
+          "named": true
+        },
+        {
+          "type": "scope_modifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "movement_value",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "MOVEMENT_LIT",
+          "named": true
+        },
+        {
+          "type": "NUM_LIT",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_ASTER",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "movement_values",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "MOVEMENT_LIT",
+          "named": true
+        },
+        {
+          "type": "NUM_LIT",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_ASTER",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "poryswitch",
+    "named": true,
+    "fields": {
+      "switch": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "IDENT",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "TOKEN_KW_PORYSWITCH",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_BCLOSE",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_BOPEN",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_PCLOSE",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_POPEN",
+          "named": true
+        },
+        {
+          "type": "poryswitch_case",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "poryswitch_case",
+    "named": true,
+    "fields": {
+      "case": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "IDENT",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "TOKEN_P_BCLOSE",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_BOPEN",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_COLON",
+          "named": true
+        },
+        {
+          "type": "mart_value",
+          "named": true
+        },
+        {
+          "type": "mart_values",
+          "named": true
+        },
+        {
+          "type": "movement_value",
+          "named": true
+        },
+        {
+          "type": "movement_values",
+          "named": true
+        },
+        {
+          "type": "text_value",
+          "named": true
+        },
+        {
+          "type": "text_values",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "raw",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "RAW_LIT",
+          "named": true
+        },
+        {
+          "type": "TOKEN_KW_RAW",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "scope_modifier",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "TOKEN_KW_GLOBAL",
+          "named": true
+        },
+        {
+          "type": "TOKEN_KW_LOCAL",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_PCLOSE",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_POPEN",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "script",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "IDENT",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "TOKEN_KW_SCRIPT",
+          "named": true
+        },
+        {
+          "type": "scope_modifier",
+          "named": true
+        },
+        {
+          "type": "script_block",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "script_application",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "IDENT",
+          "named": true
+        },
+        {
+          "type": "NUM_LIT",
+          "named": true
+        },
+        {
+          "type": "SCRIPT_FN_LIT",
+          "named": true
+        },
+        {
+          "type": "STRING_INTERPOLATED",
+          "named": true
+        },
+        {
+          "type": "STRING_LIT",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_PCLOSE",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_POPEN",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "script_block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "IDENT",
+          "named": true
+        },
+        {
+          "type": "SCRIPT_0_LIT",
+          "named": true
+        },
+        {
+          "type": "TOKEN_KW_BREAK",
+          "named": true
+        },
+        {
+          "type": "TOKEN_KW_CONTINUE",
+          "named": true
+        },
+        {
+          "type": "TOKEN_KW_END",
+          "named": true
+        },
+        {
+          "type": "TOKEN_KW_RETURN",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_BCLOSE",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_BOPEN",
+          "named": true
+        },
+        {
+          "type": "script_application",
+          "named": true
+        },
+        {
+          "type": "script_do_while",
+          "named": true
+        },
+        {
+          "type": "script_if",
+          "named": true
+        },
+        {
+          "type": "script_switch",
+          "named": true
+        },
+        {
+          "type": "script_while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "script_do_while",
+    "named": true,
+    "fields": {
+      "dobody": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "script_block",
+            "named": true
+          }
+        ]
+      },
+      "docond": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "script_expression",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "TOKEN_KW_DO",
+          "named": true
+        },
+        {
+          "type": "TOKEN_KW_WHILE",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_PCLOSE",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_POPEN",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "script_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "script_application",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "script_if",
+    "named": true,
+    "fields": {
+      "elifbody": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "script_block",
+            "named": true
+          }
+        ]
+      },
+      "elifcond": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "script_expression",
+            "named": true
+          }
+        ]
+      },
+      "elsebody": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "script_block",
+            "named": true
+          }
+        ]
+      },
+      "ifbody": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "script_block",
+            "named": true
+          }
+        ]
+      },
+      "ifcond": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "script_expression",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "TOKEN_KW_ELIF",
+          "named": true
+        },
+        {
+          "type": "TOKEN_KW_ELSE",
+          "named": true
+        },
+        {
+          "type": "TOKEN_KW_IF",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_PCLOSE",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_POPEN",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "script_switch",
+    "named": true,
+    "fields": {
+      "switchexpr": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "script_expression",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "TOKEN_KW_SWITCH",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_BCLOSE",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_BOPEN",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_PCLOSE",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_POPEN",
+          "named": true
+        },
+        {
+          "type": "script_switch_case",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "script_switch_case",
+    "named": true,
+    "fields": {
+      "casebody": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "IDENT",
+            "named": true
+          },
+          {
+            "type": "SCRIPT_0_LIT",
+            "named": true
+          },
+          {
+            "type": "TOKEN_KW_BREAK",
+            "named": true
+          },
+          {
+            "type": "TOKEN_KW_CONTINUE",
+            "named": true
+          },
+          {
+            "type": "TOKEN_KW_END",
+            "named": true
+          },
+          {
+            "type": "TOKEN_KW_RETURN",
+            "named": true
+          },
+          {
+            "type": "script_application",
+            "named": true
+          },
+          {
+            "type": "script_do_while",
+            "named": true
+          },
+          {
+            "type": "script_if",
+            "named": true
+          },
+          {
+            "type": "script_switch",
+            "named": true
+          },
+          {
+            "type": "script_while",
+            "named": true
+          }
+        ]
+      },
+      "caseval": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "NUM_LIT",
+            "named": true
+          }
+        ]
+      },
+      "defaultbody": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "IDENT",
+            "named": true
+          },
+          {
+            "type": "SCRIPT_0_LIT",
+            "named": true
+          },
+          {
+            "type": "TOKEN_KW_BREAK",
+            "named": true
+          },
+          {
+            "type": "TOKEN_KW_CONTINUE",
+            "named": true
+          },
+          {
+            "type": "TOKEN_KW_END",
+            "named": true
+          },
+          {
+            "type": "TOKEN_KW_RETURN",
+            "named": true
+          },
+          {
+            "type": "script_application",
+            "named": true
+          },
+          {
+            "type": "script_do_while",
+            "named": true
+          },
+          {
+            "type": "script_if",
+            "named": true
+          },
+          {
+            "type": "script_switch",
+            "named": true
+          },
+          {
+            "type": "script_while",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "TOKEN_KW_CASE",
+          "named": true
+        },
+        {
+          "type": "TOKEN_KW_DEFAULT",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_COLON",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "script_while",
+    "named": true,
+    "fields": {
+      "whilebody": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "script_block",
+            "named": true
+          }
+        ]
+      },
+      "whilecond": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "script_expression",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "TOKEN_KW_WHILE",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_PCLOSE",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_POPEN",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "statement",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "COMMENT",
+          "named": true
+        },
+        {
+          "type": "const",
+          "named": true
+        },
+        {
+          "type": "mart",
+          "named": true
+        },
+        {
+          "type": "movement",
+          "named": true
+        },
+        {
+          "type": "raw",
+          "named": true
+        },
+        {
+          "type": "script",
+          "named": true
+        },
+        {
+          "type": "text",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "text",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "IDENT",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "TOKEN_KW_TEXT",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_BCLOSE",
+          "named": true
+        },
+        {
+          "type": "TOKEN_P_BOPEN",
+          "named": true
+        },
+        {
+          "type": "poryswitch",
+          "named": true
+        },
+        {
+          "type": "scope_modifier",
+          "named": true
+        },
+        {
+          "type": "text_values",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "text_value",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "STRING",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "text_values",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "STRING",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "BIN_LIT",
+    "named": true
+  },
+  {
+    "type": "HASH_COMMENT",
+    "named": true
+  },
+  {
+    "type": "HEX_LIT",
+    "named": true
+  },
+  {
+    "type": "IDENT",
+    "named": true
+  },
+  {
+    "type": "INT_LIT",
+    "named": true
+  },
+  {
+    "type": "RAW_LIT",
+    "named": true
+  },
+  {
+    "type": "SLASH_COMMENT",
+    "named": true
+  },
+  {
+    "type": "STRING_INTER_END",
+    "named": true
+  },
+  {
+    "type": "STRING_INTER_MID",
+    "named": true
+  },
+  {
+    "type": "STRING_INTER_START",
+    "named": true
+  },
+  {
+    "type": "STRING_LIT",
+    "named": true
+  },
+  {
+    "type": "TOKEN_BI_FORMAT",
+    "named": true
+  },
+  {
+    "type": "TOKEN_KW_BREAK",
+    "named": true
+  },
+  {
+    "type": "TOKEN_KW_CASE",
+    "named": true
+  },
+  {
+    "type": "TOKEN_KW_CONST",
+    "named": true
+  },
+  {
+    "type": "TOKEN_KW_CONTINUE",
+    "named": true
+  },
+  {
+    "type": "TOKEN_KW_DEFAULT",
+    "named": true
+  },
+  {
+    "type": "TOKEN_KW_DO",
+    "named": true
+  },
+  {
+    "type": "TOKEN_KW_ELIF",
+    "named": true
+  },
+  {
+    "type": "TOKEN_KW_ELSE",
+    "named": true
+  },
+  {
+    "type": "TOKEN_KW_END",
+    "named": true
+  },
+  {
+    "type": "TOKEN_KW_GLOBAL",
+    "named": true
+  },
+  {
+    "type": "TOKEN_KW_IF",
+    "named": true
+  },
+  {
+    "type": "TOKEN_KW_LOCAL",
+    "named": true
+  },
+  {
+    "type": "TOKEN_KW_MART",
+    "named": true
+  },
+  {
+    "type": "TOKEN_KW_MOVEMENT",
+    "named": true
+  },
+  {
+    "type": "TOKEN_KW_PORYSWITCH",
+    "named": true
+  },
+  {
+    "type": "TOKEN_KW_RAW",
+    "named": true
+  },
+  {
+    "type": "TOKEN_KW_RETURN",
+    "named": true
+  },
+  {
+    "type": "TOKEN_KW_SCRIPT",
+    "named": true
+  },
+  {
+    "type": "TOKEN_KW_SWITCH",
+    "named": true
+  },
+  {
+    "type": "TOKEN_KW_TEXT",
+    "named": true
+  },
+  {
+    "type": "TOKEN_KW_WHILE",
+    "named": true
+  },
+  {
+    "type": "TOKEN_P_ASTER",
+    "named": true
+  },
+  {
+    "type": "TOKEN_P_BCLOSE",
+    "named": true
+  },
+  {
+    "type": "TOKEN_P_BOPEN",
+    "named": true
+  },
+  {
+    "type": "TOKEN_P_COLON",
+    "named": true
+  },
+  {
+    "type": "TOKEN_P_EQUALS",
+    "named": true
+  },
+  {
+    "type": "TOKEN_P_PCLOSE",
+    "named": true
+  },
+  {
+    "type": "TOKEN_P_PLUS",
+    "named": true
+  },
+  {
+    "type": "TOKEN_P_POPEN",
+    "named": true
+  },
+  {
+    "type": "defeated",
+    "named": false
+  },
+  {
+    "type": "face_down",
+    "named": false
+  },
+  {
+    "type": "face_left",
+    "named": false
+  },
+  {
+    "type": "face_right",
+    "named": false
+  },
+  {
+    "type": "face_up",
+    "named": false
+  },
+  {
+    "type": "faceplayer",
+    "named": false
+  },
+  {
+    "type": "flag",
+    "named": false
+  },
+  {
+    "type": "lock",
+    "named": false
+  },
+  {
+    "type": "msgbox",
+    "named": false
+  },
+  {
+    "type": "release",
+    "named": false
+  },
+  {
+    "type": "value",
+    "named": false
+  },
+  {
+    "type": "var",
+    "named": false
+  },
+  {
+    "type": "walk_down",
+    "named": false
+  },
+  {
+    "type": "walk_left",
+    "named": false
+  },
+  {
+    "type": "walk_right",
+    "named": false
+  },
+  {
+    "type": "walk_up",
+    "named": false
+  }
+]
