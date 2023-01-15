@@ -16,7 +16,7 @@ This is an untested draft and these steps may be inaccurate. Please report any i
   mkdir -p ~/.config/nvim/queries/poryscript
   ln -s queries/highlights.scm ~/.config/nvim/queries/poryscript/highlights.scm
   ```
-- Update your neovim init.lua with the following. Be sure to update the <PATH TO tree-sitter-poryscript>
+- Update your neovim init.lua with the following. Be sure to update the `<PATH TO tree-sitter-poryscript>`
   ```lua
   -- Custom filetype associations
   vim.filetype.add {
