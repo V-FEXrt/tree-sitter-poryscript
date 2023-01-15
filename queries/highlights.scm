@@ -51,6 +51,11 @@
 (SLASH_COMMENT) @comment
 
 (RAW_LIT) @string.special
+
+; In case @string.special doesn't exist, highlight as char instead 
+; to be distinct from string
+(RAW_LIT) @character
+
 (STRING_LIT) @string
 (STRING_INTER_START) @string
 (STRING_INTER_MID) @string
@@ -63,5 +68,3 @@
 (MOVEMENT_LIT) @function.builtin
 (SCRIPT_0_LIT) @function.builtin
 (SCRIPT_FN_LIT) @function.builtin
-
-(IDENT) @variable

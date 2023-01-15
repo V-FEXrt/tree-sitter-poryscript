@@ -156,9 +156,9 @@ module.exports = grammar({
       // TODO: Binops / Boolean exprs
       // TODO: fix parameters for a application. comma splits params, adj str_lits are one param
       // TODO: labels
-      // poryswitch inside of script
       // TODO: const expr in const assignment
-      // mapscript
+      // TODO: mapscript
+      // TODO: handle non top-level comments
     ),
 
     script_application: $ => seq(
